@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.lysyi" name="Lysyi Add-ons" version="1.0.0" provider-name="lysyi">
+<addon id="repository.lysyi" name="Lysyi Add-ons" version="1.0.1" provider-name="lysyi">
 	<extension point="xbmc.addon.repository" name="Lysyi Add-ons">
 		<info compressed="false">https://github.com/lysyiklad/repokodi/raw/master/addons.xml</info>
 		<checksum>https://github.com/lysyiklad/repokodi/raw/master/addons.xml.md5</checksum>
@@ -49,8 +49,8 @@ WebUI: http://ip_box:6878/webui/app/WEBUITOKEN/server
 </addon>
 
 <addon id="service.system.noxbit"
-       name="NOXBIT"
-       version="1.0.1"
+       name="NOXBIT (LibreELEC armhf)"
+       version="1.0.2"
        provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -60,6 +60,35 @@ WebUI: http://ip_box:6878/webui/app/WEBUITOKEN/server
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Noxbit (LibreELEC armhf 13.02.2018) </summary>
+    <description>
+
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+    <news>
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+
+    </assets>
+  </extension>
+</addon>
+
+<addon id="service.system.noxbit64"
+       name="NOXBIT (LibreELEC arm64)"
+       version="1.0.2"
+       provider-name="lysyi">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Noxbit (LibreELEC arm64 13.02.2018) </summary>
     <description>
 
     </description>
