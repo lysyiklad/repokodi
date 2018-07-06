@@ -14,6 +14,36 @@
 	</extension>
 </addon>
 
+<addon id="script.torrent-tv.proxy"
+        name="Torrent-TV (HTTPAceProxy)"
+        version="1.7.3.2"
+        provider-name="lysyi">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup"/>
+        <import addon="script.module.torrent.ts"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>
+Торрент ТВ для медиаплатформы KODI с поддержкой HTTPAceProxy и плейлистов с pomoyka.win
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <summary>Torrent-TV  (HTTPAceProxy)</summary>
+        <description>Торрент ТВ теперь можно смотреть на медиаплатформе KODI.</description>
+        <platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+    </extension>
+</addon>
+
 <addon id="service.system.acestreammedia"
        name="Ace Stream Media (LibreELEC ARM)"
        version="1.0.5"
