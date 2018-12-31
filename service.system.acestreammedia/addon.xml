@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="service.system.acestreammedia"
        name="Ace Stream Media (LibreELEC ARM)"
-       version="1.0.5"
+       version="1.0.7"
        provider-name="lysyi">
   <requires>    
     <import addon="xbmc.python" version="2.1.0"/>
@@ -13,7 +13,7 @@
     <provides></provides>
   </extension>  
   <extension point="xbmc.addon.metadata">
-    <summary>Ace Stream Media 3.1.28 (LibreELEC ARM) </summary>
+    <summary>Ace Stream Media 3.1.33 (LibreELEC ARM) </summary>
     <description>
 ACE STREAM SYSTEM[CR]
 This is an innovative media platform of a new generation, which will take you to a new high-quality level of multimedia space on the Internet.
