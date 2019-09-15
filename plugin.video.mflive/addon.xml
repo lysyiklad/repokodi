@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.mflive" name="FootballLive" version="0.1.0" provider-name="lysyi">
+<addon id="plugin.video.mflive" name="FootballLive" version="0.2.0" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.dateutil"/>    
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.beautifulsoup4" version="4.6.2"/>    
   </requires>
   <extension point="xbmc.python.pluginsource"  provides="video" library="default.py"><provides>video</provides></extension>
   <extension point="xbmc.addon.metadata">
-    <summary>FootballLive</summary>
-    <description>Ссылки на прямые трансляции футбольных матчей (https://myfootball.top).\n
-Kodi 17 и выше.\n
-Ссылки Sopcast только с использованием плагина Plexus (https://github.com/tvaddonsco/program.plexus)
-</description>
+    <summary>Ссылки на прямые трансляции футбольных матчей (https://myfootball.top).<br />
+Kodi 17 и выше.<br />
+Ссылки Sopcast проигрываются только с использованием плагина Plexus (https://github.com/tvaddonsco/program.plexus)</summary>
+  <description>
+  </description>
     <platform>all</platform>
   </extension>
   <assets>
