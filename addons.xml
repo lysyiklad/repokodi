@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.mflive" name="FootballLive" version="0.2.1" provider-name="lysyi">
+<addon id="plugin.video.mflive" name="FootballLive" version="0.3.0" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.dateutil"/>
     <import addon="script.module.beautifulsoup4" version="4.6.2"/>
   </requires>
   <extension point="xbmc.python.pluginsource"  provides="video" library="default.py"><provides>video</provides></extension>
+  <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
     <summary>Ссылки на прямые трансляции футбольных матчей (https://myfootball.top).<br />
 Kodi 17 и выше.<br />
 Ссылки Sopcast проигрываются только с использованием плагина Plexus (https://github.com/tvaddonsco/program.plexus)</summary>
-  <description>
-  </description>
-    <platform>all</platform>
+  <summary lang="ru_RU">Ссылки на прямые трансляции футбольных матчей (https://myfootball.top).</summary>
+  <description lang="ru_RU">Ссылки на прямые трансляции футбольных матчей (https://myfootball.top).</description>
+  <language>ru</language>
+  <platform>all</platform>
   </extension>
   <assets>
     <icon>icon.png</icon>
@@ -21,7 +23,7 @@ Kodi 17 и выше.<br />
   </assets>
 </addon>
 
-<addon id="plugin.video.pimpletv" name="PimpleTV" version="1.2.1" provider-name="lysyi">
+<addon id="plugin.video.pimpletv" name="PimpleTV" version="1.2.3" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.dateutil"/>
