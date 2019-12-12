@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.mflive" name="FootballLive" version="0.3.1" provider-name="lysyi">
+<addon id="plugin.video.mflive" name="FootballLive" version="0.3.2" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.dateutil"/>
@@ -23,7 +23,7 @@ Kodi 17 и выше.<br />
   </assets>
 </addon>
 
-<addon id="plugin.video.pimpletv" name="PimpleTV" version="1.2.3" provider-name="lysyi">
+<addon id="plugin.video.pimpletv" name="PimpleTV" version="1.2.4" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.dateutil"/>
