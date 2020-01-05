@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.livesport" name="LiveSport" version="1.0.0" provider-name="lysyi">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.dateutil"/>
+        <import addon="script.module.beautifulsoup4" version="4.6.2"/>
+        <import addon="script.module.future" version="0.16.0.4"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.pil"/>
+<!--        <import addon="script.module.web-pdb" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <description lang="ru">
+            Ссылки на прямые спортивные трансляции (https://livesport.ws/). Kodi 17 и выше.
+            Для воспроизведения ссылок [AceStream] в системе должна быть установлена программа ACE
+            STREAM(http://www.acestream.org/rus/)
+            Ссылки [Sopcast] проигрываются только с использованием плагина
+            Plexus(https://github.com/tvaddonsco/program.plexus)
+        </description>
+        <description lang="en">Links to live sports (https://livesport.ws/). Kodi 17 and up.
+            To play [AceStream] links, ACE STREAM must be installed on the system (http://www.acestream.org/en/)
+            [Sopcast] links are only played using the Plexus plugin (https://github.com/tvaddonsco/program.plexus)
+        </description>
+        <platform>all</platform>
+    </extension>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.png</fanart>
+    </assets>
+</addon>
+
 <addon id="plugin.video.mflive" name="FootballLive" version="0.3.3" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -110,64 +144,6 @@ Torrent-TV R.I.P. HTTPAceProxy и плейлисты с pomoyka.win для ме�
 ACE STREAM SYSTEM[CR]
 This is an innovative media platform of a new generation, which will take you to a new high-quality level of multimedia space on the Internet.
 WebUI: http://ip_box:6878/webui/app/WEBUITOKEN/server
-    </description>
-    <disclaimer>
-
-    </disclaimer>
-    <platform>all</platform>
-    <news>
-    </news>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.png</fanart>
-
-    </assets>
-  </extension>
-</addon>
-
-<addon id="service.system.noxbit"
-       name="NOXBIT (LibreELEC armhf)"
-       version="1.0.2"
-       provider-name="lysyi">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Noxbit (LibreELEC armhf 13.02.2018) </summary>
-    <description>
-
-    </description>
-    <disclaimer>
-
-    </disclaimer>
-    <platform>all</platform>
-    <news>
-    </news>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.png</fanart>
-
-    </assets>
-  </extension>
-</addon>
-
-<addon id="service.system.noxbit64"
-       name="NOXBIT (LibreELEC arm64)"
-       version="1.0.2"
-       provider-name="lysyi">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Noxbit (LibreELEC arm64 13.02.2018) </summary>
-    <description>
-
     </description>
     <disclaimer>
 
