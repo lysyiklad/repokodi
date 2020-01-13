@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.livesport" name="LiveSport" version="1.0.0" provider-name="lysyi">
+<addon id="plugin.video.livesport" name="LiveSport" version="1.1.0" provider-name="lysyi">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.dateutil"/>
-        <import addon="script.module.beautifulsoup4" version="4.6.2"/>
-        <import addon="script.module.future" version="0.16.0.4"/>
-        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.future"/>
+        <import addon="script.module.requests"/>
         <import addon="script.module.pil"/>
 <!--        <import addon="script.module.web-pdb" />-->
     </requires>
@@ -15,13 +15,13 @@
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <description lang="ru">
-            Ссылки на прямые спортивные трансляции (https://livesport.ws/). Kodi 17 и выше.
+            Ссылки на прямые спортивные трансляции (https://livesport.ws/). Kodi 16 и выше.
             Для воспроизведения ссылок [AceStream] в системе должна быть установлена программа ACE
             STREAM(http://www.acestream.org/rus/)
             Ссылки [Sopcast] проигрываются только с использованием плагина
             Plexus(https://github.com/tvaddonsco/program.plexus)
         </description>
-        <description lang="en">Links to live sports (https://livesport.ws/). Kodi 17 and up.
+        <description lang="en">Links to live sports (https://livesport.ws/). Kodi 16 and up.
             To play [AceStream] links, ACE STREAM must be installed on the system (http://www.acestream.org/en/)
             [Sopcast] links are only played using the Plexus plugin (https://github.com/tvaddonsco/program.plexus)
         </description>

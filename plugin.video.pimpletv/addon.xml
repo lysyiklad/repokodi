@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.pimpletv" name="PimpleTV" version="1.2.7" provider-name="lysyi">
+<addon id="plugin.video.pimpletv" name="PimpleTV" version="1.3.0" provider-name="lysyi">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.dateutil"/>
-    <import addon="script.module.beautifulsoup4" version="4.6.2"/>
-    <import addon="script.module.pil"/>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.dateutil"/>
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.future"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.pil"/>
+<!--        <import addon="script.module.web-pdb" />-->
   </requires>
   <extension point="xbmc.python.pluginsource"  provides="video" library="default.py"><provides>video</provides></extension>
   <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
     <summary>Ссылки на спортивные прямые трансляции (https://www.pimpletv.ru/).<br />
-Kodi 17 и выше.<br />
 Ссылки Sopcast проигрываются только с использованием плагина Plexus (https://github.com/tvaddonsco/program.plexus)</summary>
   <summary lang="ru_RU">Ссылки на спортивные прямые трансляции (https://www.pimpletv.ru/)</summary>
   <description lang="ru_RU">Ссылки на спортивные прямые трансляции (https://www.pimpletv.ru/)</description>
