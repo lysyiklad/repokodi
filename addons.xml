@@ -34,7 +34,7 @@
     </assets>
 </addon>
 
-<addon id="plugin.video.mflive" name="FootballLive" version="0.3.5" provider-name="lysyi">
+<addon id="plugin.video.mflive" name="FootballLive" version="0.3.6" provider-name="lysyi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.dateutil"/>
